@@ -1,0 +1,62 @@
+# ReactNext
+
+Basic ideas comprise
+knowing how virtual DOM functions
+What is a one-way data flow?
+studying the JSX syntax
+Recognizing functional and class components' differences
+Props
+rendering elements dependent on circumstances.
+The component life cycle.
+Standard Hooks ( useState & useEffect )
+Try to develop three to five projects employing the fundamentals you've learned once you've learnt them. You can also build your portfolio with the aid of these.
+
+projects such as
+
+Calculator
+Creator of colours
+Calculate your BMI
+Input form for greetings using react useState.
+using useState to retrieve photos from the URL.
+Check out reactjs tutorial on react if you want to learn the language interactively. Additionally, you will create projects for your portfolio during this tutorial.
+
+Intermediate ReactJS
+
+You are prepared to go to the intermediate ReactJS topics once you have mastered and constructed the fundamental projects.
+
+You will need two to three weeks to master the Intermediate React fundamentals.
+
+Intermediate ideas comprise
+
+Lists and Keys
+passing kudos
+the middle hooks ( useContext, useRef )
+Routing
+constructing unique components
+exporting specialised parts
+You will learn the principles of basic concepts and get an understanding of advanced concepts through the use of intermediate concepts.
+
+Use your knowledge of React's fundamentals and intermediate concepts to construct projects at the intermediate level.
+
+projects such as
+
+Applications for Todo
+constructing forms
+Use event listeners as a test subject.
+Advanced Concepts in ReactJS
+
+Make sure you comprehend the fundamental and advanced ideas. Now is the moment to strive harder and use greater mental effort.
+
+If you put in two to four hours per day, it will take you about one to two months to learn advanced ideas.
+
+advanced ideas consist of
+
+making unique hooks.
+Context
+Refs
+Superior Elements
+Adaptive Patterns
+Handling mistakes
+Working with active promises
+Effects
+React app testing

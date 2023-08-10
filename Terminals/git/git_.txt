@@ -1,0 +1,459 @@
+
+
+----------------------- START 
+
+Pratyush@Pratyush MINGW64 ~/Desktop/gitFiles/WebDev
+$ git config --global user.name "pratyushbehera23"
+
+Pratyush@Pratyush MINGW64 ~/Desktop/gitFiles/WebDev
+$ git config --global user.email "pratyushbehera.mail@gmail.com"
+
+Pratyush@Pratyush MINGW64 ~/Desktop/gitFiles/WebDev
+$ git config --list
+diff.astextplain.textconv=astextplain
+filter.lfs.clean=git-lfs clean -- %f
+filter.lfs.smudge=git-lfs smudge -- %f
+filter.lfs.process=git-lfs filter-process
+filter.lfs.required=true
+http.sslbackend=openssl
+http.sslcainfo=C:/Program Files/Git/mingw64/ssl/certs/ca-bundle.crt
+core.autocrlf=true
+core.fscache=true
+core.symlinks=false
+pull.rebase=false
+credential.helper=manager
+user.email=pratyushbehera.mail@gmail.com
+user.name=pratyushbehera23
+filter.lfs.required=true
+filter.lfs.clean=git-lfs clean -- %f
+filter.lfs.smudge=git-lfs smudge -- %f
+filter.lfs.process=git-lfs filter-process
+
+
+--------------------------- Pushing code to a new repository: 
+
+
+Pratyush@Pratyush MINGW64 ~/Desktop/gitFiles/WebDev
+$ git init
+Initialized empty Git repository in C:/Users/Pratyush/Desktop/gitFiles/WebDev/.git/
+
+Pratyush@Pratyush MINGW64 ~/Desktop/gitFiles/WebDev (master)
+$ git remote add origin https://github.com/pratyushbehera23/WebDev-Cheatsheets.git
+
+Pratyush@Pratyush MINGW64 ~/Desktop/gitFiles/WebDev (master)
+$ git add .
+
+Pratyush@Pratyush MINGW64 ~/Desktop/gitFiles/WebDev (master)
+$ git commit -m 'initial commit'
+[master (root-commit) e3a9243] initial commit
+ 2 files changed, 1971 insertions(+)
+ create mode 100644 cheatsheet.css
+ create mode 100644 index.html
+
+Pratyush@Pratyush MINGW64 ~/Desktop/gitFiles/WebDev (master)
+$ git push origin master
+Logon failed, use ctrl+c to cancel basic credential prompt.
+remote: Support for password authentication was removed on August 13, 2021.
+remote: Please see https://docs.github.com/en/get-started/getting-started-with-git/about-remote-repositories#cloning-with-https-urls for information on currently recommended modes of authentication.
+fatal: Authentication failed for 'https://github.com/pratyushbehera23/WebDev-Cheatsheets.git/'
+
+^ ------------- LOGIN ISSUE 
+
+Pratyush@Pratyush MINGW64 ~/Desktop/gitFiles/WebDev (master)
+$
+
+
+
+
+
+-------------------
+
+
+
+Pratyush@Pratyush MINGW64 /d/CODE/git_/gitp1 (master)
+$ git init
+Initialized empty Git repository in D:/CODE/git_/gitp1/.git/
+
+Pratyush@Pratyush MINGW64 /d/CODE/git_/gitp1 (master)
+$ ls
+
+Pratyush@Pratyush MINGW64 /d/CODE/git_/gitp1 (master)
+$ ls -a
+./  ../  .git/
+
+Pratyush@Pratyush MINGW64 /d/CODE/git_/gitp1 (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        index.html
+        style.css
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Pratyush@Pratyush MINGW64 /d/CODE/git_/gitp1 (master)
+$ git add .
+
+Pratyush@Pratyush MINGW64 /d/CODE/git_/gitp1 (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   index.html
+        new file:   style.css
+
+
+Pratyush@Pratyush MINGW64 /d/CODE/git_/gitp1 (master)
+$ git commit -m "initial commit"
+[master (root-commit) 50781d5] initial commit
+ 2 files changed, 19 insertions(+)
+ create mode 100644 index.html
+ create mode 100644 style.css
+
+Pratyush@Pratyush MINGW64 /d/CODE/git_/gitp1 (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   index.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Pratyush@Pratyush MINGW64 /d/CODE/git_/gitp1 (master)
+$ git add .
+
+Pratyush@Pratyush MINGW64 /d/CODE/git_/gitp1 (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   index.html
+
+
+Pratyush@Pratyush MINGW64 /d/CODE/git_/gitp1 (master)
+$ git commit -m "addded info to html"
+[master 5ca48e5] addded info to html
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+Pratyush@Pratyush MINGW64 /d/CODE/git_/gitp1 (master)
+$ git log
+commit 5ca48e5409ea36ffe5da3784c870b14e1817a951 (HEAD -> master)
+Author: mePratyush <pratyush23pro@gmail.com>
+Date:   Thu Nov 17 12:38:58 2022 +0530
+
+    addded info to html
+
+commit 50781d57bc3898c4d41e755d58b7f588ff0ac256
+Author: mePratyush <pratyush23pro@gmail.com>
+Date:   Thu Nov 17 12:32:47 2022 +0530
+
+    initial commit
+
+Pratyush@Pratyush MINGW64 /d/CODE/git_/gitp1 (master)
+$ git checkout 5ca48e5409ea36ffe5da3784c870b14e1817a951
+error: pathspec '┬û5ca48e5409ea36ffe5da3784c870b14e1817a951' did not match any file(s) known to git
+
+Pratyush@Pratyush MINGW64 /d/CODE/git_/gitp1 (master)
+c870b14e1817a951^C48e5409ea36ffe5da3784c870b14e1817a9515ca48e5409ea36ffe5da3784c
+
+Pratyush@Pratyush MINGW64 /d/CODE/git_/gitp1 (master)
+$ git commit 5ca48e5409ea36ffe5da3784c870b14e1817a951
+error: pathspec '5ca48e5409ea36ffe5da3784c870b14e1817a951' did not match any file(s) known to git
+
+Pratyush@Pratyush MINGW64 /d/CODE/git_/gitp1 (master)
+$ git commit 50781d57bc3898c4d41e755d58b7f588ff0ac256
+error: pathspec '50781d57bc3898c4d41e755d58b7f588ff0ac256' did not match any file(s) known to git
+
+Pratyush@Pratyush MINGW64 /d/CODE/git_/gitp1 (master)
+$ git log
+commit 5ca48e5409ea36ffe5da3784c870b14e1817a951 (HEAD -> master)
+Author: mePratyush <pratyush23pro@gmail.com>
+Date:   Thu Nov 17 12:38:58 2022 +0530
+
+    addded info to html
+
+commit 50781d57bc3898c4d41e755d58b7f588ff0ac256
+Author: mePratyush <pratyush23pro@gmail.com>
+Date:   Thu Nov 17 12:32:47 2022 +0530
+
+    initial commit
+
+Pratyush@Pratyush MINGW64 /d/CODE/git_/gitp1 (master)
+$ git checkout 50781d57bc3898c4d41e755d58b7f588ff0ac256
+Note: switching to '50781d57bc3898c4d41e755d58b7f588ff0ac256'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+
+HEAD is now at 50781d5 initial commit
+
+Pratyush@Pratyush MINGW64 /d/CODE/git_/gitp1 ((50781d5...))
+$ git log
+commit 50781d57bc3898c4d41e755d58b7f588ff0ac256 (HEAD)
+Author: mePratyush <pratyush23pro@gmail.com>
+Date:   Thu Nov 17 12:32:47 2022 +0530
+
+    initial commit
+
+Pratyush@Pratyush MINGW64 /d/CODE/git_/gitp1 ((50781d5...))
+$ git checkout master
+Previous HEAD position was 50781d5 initial commit
+Switched to branch 'master'
+
+Pratyush@Pratyush MINGW64 /d/CODE/git_/gitp1 (master)
+$ git branch dev
+
+Pratyush@Pratyush MINGW64 /d/CODE/git_/gitp1 (master)
+$ git checkout dev
+Switched to branch 'dev'
+
+Pratyush@Pratyush MINGW64 /d/CODE/git_/gitp1 (dev)
+$ git status
+On branch dev
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   index.html
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        script.js
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Pratyush@Pratyush MINGW64 /d/CODE/git_/gitp1 (dev)
+$ git add .
+
+Pratyush@Pratyush MINGW64 /d/CODE/git_/gitp1 (dev)
+$ git status
+On branch dev
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   index.html
+        new file:   script.js
+
+
+Pratyush@Pratyush MINGW64 /d/CODE/git_/gitp1 (dev)
+$ git commit -m "new js file added"
+[dev d37fffa] new js file added
+ 2 files changed, 3 insertions(+)
+ create mode 100644 script.js
+
+Pratyush@Pratyush MINGW64 /d/CODE/git_/gitp1 (dev)
+$ git status
+On branch dev
+nothing to commit, working tree clean
+
+Pratyush@Pratyush MINGW64 /d/CODE/git_/gitp1 (dev)
+$ git checkout master
+Switched to branch 'master'
+
+Pratyush@Pratyush MINGW64 /d/CODE/git_/gitp1 (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+Pratyush@Pratyush MINGW64 /d/CODE/git_/gitp1 (master)
+$ git merge dev
+Updating 5ca48e5..d37fffa
+Fast-forward
+ index.html | 1 +
+ script.js  | 2 ++
+ 2 files changed, 3 insertions(+)
+ create mode 100644 script.js
+
+Pratyush@Pratyush MINGW64 /d/CODE/git_/gitp1 (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+Pratyush@Pratyush MINGW64 /d/CODE/git_/gitp1 (master)
+$ ls
+index.html  script.js  style.css
+
+Pratyush@Pratyush MINGW64 /d/CODE/git_/gitp1 (master)
+$ git log
+commit d37fffacd2d940cf0f376de02cbe4f2f90236e3b (HEAD -> master, dev)
+Author: mePratyush <pratyush23pro@gmail.com>
+Date:   Thu Nov 17 12:53:44 2022 +0530
+
+    new js file added
+
+commit 5ca48e5409ea36ffe5da3784c870b14e1817a951
+Author: mePratyush <pratyush23pro@gmail.com>
+Date:   Thu Nov 17 12:38:58 2022 +0530
+
+    addded info to html
+
+commit 50781d57bc3898c4d41e755d58b7f588ff0ac256
+Author: mePratyush <pratyush23pro@gmail.com>
+Date:   Thu Nov 17 12:32:47 2022 +0530
+
+    initial commit
+
+Pratyush@Pratyush MINGW64 /d/CODE/git_/gitp1 (master)
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        secret.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Pratyush@Pratyush MINGW64 /d/CODE/git_/gitp1 (master)
+$ touch .gitignore
+
+Pratyush@Pratyush MINGW64 /d/CODE/git_/gitp1 (master)
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .gitignore
+        secret.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Pratyush@Pratyush MINGW64 /d/CODE/git_/gitp1 (master)
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .gitignore
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Pratyush@Pratyush MINGW64 /d/CODE/git_/gitp1 (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+Pratyush@Pratyush MINGW64 /d/CODE/git_/gitp1 (master)
+$ git remote add origin https://github.com/Pratyush52/ReLearning-gitp1.git
+
+Pratyush@Pratyush MINGW64 /d/CODE/git_/gitp1 (master)
+$ git remote -v
+origin  https://github.com/Pratyush52/ReLearning-gitp1.git (fetch)
+origin  https://github.com/Pratyush52/ReLearning-gitp1.git (push)
+
+Pratyush@Pratyush MINGW64 /d/CODE/git_/gitp1 (master)
+$ git branch -M master
+
+Pratyush@Pratyush MINGW64 /d/CODE/git_/gitp1 (master)
+$ git push -u origin master
+Logon failed, use ctrl+c to cancel basic credential prompt.
+remote: Support for password authentication was removed on August 13, 2021.
+remote: Please see https://docs.github.com/en/get-started/getting-started-with-git/about-remote-repositories#cloning-with-https-urls for information on currently recommended modes of authentication.
+fatal: Authentication failed for 'https://github.com/Pratyush52/ReLearning-gitp1.git/'
+
+Pratyush@Pratyush MINGW64 /d/CODE/git_/gitp1 (master)
+$ git push -u origin master
+Logon failed, use ctrl+c to cancel basic credential prompt.
+remote: Support for password authentication was removed on August 13, 2021.
+remote: Please see https://docs.github.com/en/get-started/getting-started-with-git/about-remote-repositories#cloning-with-https-urls for information on currently recommended modes of authentication.
+fatal: Authentication failed for 'https://github.com/Pratyush52/ReLearning-gitp1.git/'
+
+Pratyush@Pratyush MINGW64 /d/CODE/git_/gitp1 (master)
+$ git push -u origin master
+Logon failed, use ctrl+c to cancel basic credential prompt.
+
+Pratyush@Pratyush MINGW64 /d/CODE/git_/gitp1 (master)
+$ git push -u origin master
+Logon failed, use ctrl+c to cancel basic credential prompt.
+remote: Support for password authentication was removed on August 13, 2021.
+remote: Please see https://docs.github.com/en/get-started/getting-started-with-git/about-remote-repositories#cloning-with-https-urls for information on currently recommended modes of authentication.
+fatal: Authentication failed for 'https://github.com/Pratyush52/ReLearning-gitp1.git/'
+
+Pratyush@Pratyush MINGW64 /d/CODE/git_/gitp1 (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+Pratyush@Pratyush MINGW64 /d/CODE/git_/gitp1 (master)
+$ git push -u origin master
+Logon failed, use ctrl+c to cancel basic credential prompt.
+remote: Support for password authentication was removed on August 13, 2021.
+remote: Please see https://docs.github.com/en/get-started/getting-started-with-git/about-remote-repositories#cloning-with-https-urls for information on currently recommended modes of authentication.
+fatal: Authentication failed for 'https://github.com/Pratyush52/ReLearning-gitp1.git/'
+
+Pratyush@Pratyush MINGW64 /d/CODE/git_/gitp1 (master)
+$ git push -u origin master
+Logon failed, use ctrl+c to cancel basic credential prompt.
+remote: Support for password authentication was removed on August 13, 2021.
+remote: Please see https://docs.github.com/en/get-started/getting-started-with-git/about-remote-repositories#cloning-with-https-urls for information on currently recommended modes of authentication.
+fatal: Authentication failed for 'https://github.com/Pratyush52/ReLearning-gitp1.git/'
+
+Pratyush@Pratyush MINGW64 /d/CODE/git_/gitp1 (master)
+$
+
+
+
+
+
+
+
+--------------------- ERROR:
+
+
+PS C:\Users\Pratyush\Desktop\gitFiles\Templates> git init
+Initialized empty Git repository in C:/Users/Pratyush/Desktop/gitFiles/Templates/.git/
+PS C:\Users\Pratyush\Desktop\gitFiles\Templates> git status
+On branch master
+
+No commits yet  
+
+Untracked files:
+        HTML/
+        ReactInHTML/
+        react-app/
+
+nothing added to commit but untracked files present (use "git add" to track)
+PS C:\Users\Pratyush\Desktop\gitFiles\Templates> git add .
+warning: adding embedded git repository: react-app
+hint: You've added another git repository inside your current repository.
+hint: Clones of the outer repository will not contain the contents of
+hint: the embedded repository and will not know how to obtain it.
+hint: If you meant to add a submodule, use:
+hint: 
+hint:   git submodule add <url> react-app
+hint: 
+hint: If you added this path by mistake, you can remove it from the
+hint: index with:
+hint:
+hint:   git rm --cached react-app
+hint:
+hint: See "git help submodule" for more information.
+PS C:\Users\Pratyush\Desktop\gitFiles\Templates> git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   .gitignore
+        new file:   HTML/index.html
+        new file:   HTML/script.js
+        new file:   HTML/style.css
+        new file:   ReactInHTML/index.html
+        new file:   react-app
+
+PS C:\Users\Pratyush\Desktop\gitFiles\Templates>
+
